@@ -14,5 +14,13 @@ module.exports = {
         tsConfigPath: './tsconfig.paths.json'
       }
     }
-  ]
+  ],
+  style: {
+    postOptions: {
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ],
+    },
+  },
 };
